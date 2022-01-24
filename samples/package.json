@@ -1,0 +1,21 @@
+{
+  "name": "textme-sms-sdk-sample",
+  "description": "A sample app to demonstrate the usage of textme-sms-sdk",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Iconicto",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.1",
+    "textme-sms-sdk": "../lib/"
+  }
+}
