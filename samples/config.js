@@ -17,7 +17,7 @@
  */
 
 const config = {
-    apiKey: "3|nuMPojvbrwKdKa1EtrZCM0FdzeiYRdiRyJYirx9N ",
+    apiKey: "4|rg6coE8RIS6lQeQf6IbvAna52f4gZqELZ3Bvl1Tp" ,
     senderID: "Iconicto"
 }
 module.exports = config;

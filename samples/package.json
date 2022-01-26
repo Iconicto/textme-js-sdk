@@ -1,6 +1,6 @@
 {
-  "name": "textme-sms-sdk-sample",
-  "description": "A sample app to demonstrate the usage of textme-sms-sdk",
+  "name": "textme-js-sdk-sample",
+  "description": "A sample app to demonstrate the usage of textme-js-sdk",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {

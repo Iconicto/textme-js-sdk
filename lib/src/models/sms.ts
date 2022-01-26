@@ -19,45 +19,38 @@
 export interface SMSResponse {
     status: string,
     message: string,
-    data: {
-        uid: string,
-        to: string,
-        from: string,
-        message: string,
-        status: string,
-        cost: number
-    }
+    data: SMSResponseData
+}
+
+export interface SMSResponseData {
+    uid: string,
+    to: string,
+    from: string,
+    message: string,
+    status: string,
+    cost: number
 }
 
 export interface ViewAllSMSResponse {
     status: string;
-    message: null;
+    message: string;
     data: AllSMSData;
 }
 
 export interface AllSMSData {
     current_page: number;
-    data: SMSData[];
+    data: SMSResponseData[];
     first_page_url: string;
     from: number;
     last_page: number;
     last_page_url: string;
     links: AllSMSLink[];
-    next_page_url: null;
+    next_page_url: string;
     path: string;
     per_page: number;
-    prev_page_url: null;
+    prev_page_url: string;
     to: number;
     total: number;
-}
-
-export interface SMSData {
-    uid: string;
-    to: string;
-    from: string;
-    message: string;
-    status: string;
-    cost: string;
 }
 
 export interface AllSMSLink {

@@ -1,7 +1,7 @@
 {
-    "name": "textme-sms-sdk",
+    "name": "textme-js-sdk",
     "version": "0.0.1",
-    "description": "Textme.lk SMS SDK and Sample Apps",
+    "description": "Textme.lk Javascript SDK and Sample Apps",
     "main": "dist/src/index.js",
     "types": "dist/src/index.d.ts",
     "module": "src/index.ts",

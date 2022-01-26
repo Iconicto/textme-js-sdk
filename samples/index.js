@@ -30,7 +30,7 @@ app.use(cookieParser());
 app.use(express.json());
 
 //Initialize the TextMe Client
-const smsClient = new TextMeClient(config);
+const textmeClient = new TextMeClient(config);
 
 app.get("/", (req, res) => {
   res.status(200).send("Thank you for choosing TextMe.lk");
@@ -44,8 +44,7 @@ app.get("/", (req, res) => {
         }
 */
 app.post("/send", (req, res) => {
-  console.log(req.body);
-  smsClient
+  textmeClient
     .sendSMS(req.body.to, req.body.message)
     .then((response) => {
       console.log(response);
@@ -63,7 +62,7 @@ Eg URL: http://localhost:5000/view?uid=61bd23rt4b8237e
 */
 
 app.get("/view", (req, res) => {
-  smsClient
+  textmeClient
     .viewSMS(req.query.uid)
     .then((response) => {
       console.log(response);
@@ -77,7 +76,7 @@ app.get("/view", (req, res) => {
 
 //Get a list of all the SMS
 app.get("/viewall", (req, res) => {
-  smsClient
+  textmeClient
     .viewAllSMS()
     .then((response) => {
       console.log(response);
