@@ -64,7 +64,7 @@ jobs:
             cd samples
             rm -rf **/node_modules/
             for dir in */ ; do
-                zip -r "../artifacts/${dir%/}.zip" $dir
+                zip -r "../artifacts/${dir}.zip" $dir
             done
           fi
       - name: Release TextMe JS SDK
