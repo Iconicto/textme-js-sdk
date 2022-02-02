@@ -2,7 +2,7 @@
     "compilerOptions": {
         "esModuleInterop": true,
         "target": "es6",
-        "module": "commonjs",
+        "module": "esnext",
         "moduleResolution": "node",
         "noImplicitAny": false,
         "jsx": "react",
