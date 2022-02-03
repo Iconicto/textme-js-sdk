@@ -1,6 +1,6 @@
 {
-  "name": "textme-js-sdk",
-  "version": "0.0.1",
+  "name": "@iconicto/textme-js-sdk",
+  "version": "0.0.0",
   "description": "Textme.lk Javascript SDK and Sample Apps",
   "main": "dist/textme.production.js",
   "module": "dist/textme.production.esm.js",

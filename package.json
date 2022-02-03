@@ -1,6 +1,6 @@
 {
-    "name": "textme-js-sdk",
-    "version": "0.0.0",
+    "name": "@iconicto/textme-js-sdk",
+    "version": "0.0.1",
     "description": "Textme.lk Javascript SDK and Sample Apps",
     "main": "index.js",
     "scripts": {
@@ -21,7 +21,7 @@
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/suvink/textme-node-sdk.git"
+      "url": "git+https://github.com/Iconicto/textme-js-sdk.git"
     },
     "keywords": [
       "SMS",
