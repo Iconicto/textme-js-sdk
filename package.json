@@ -1,6 +1,6 @@
 {
     "name": "textme-js-sdk",
-    "version": "0.0.1",
+    "version": "0.0.0",
     "description": "Textme.lk Javascript SDK and Sample Apps",
     "main": "index.js",
     "scripts": {

@@ -56,27 +56,11 @@ jobs:
           git config --global user.name "iconicto-github-bot"
           yarn run bump-${{ github.event.inputs.Type }}-version
           git push --follow-tags
-      - name: Pack Release Artifacts
-        run: |
-          mkdir artifacts
-          if test -d samples
-          then
-            cd samples
-            rm -rf **/node_modules/
-            for dir in ./ ; do
-                zip -r "../artifacts/${dir}.zip" $dir
-            done
-          fi
-      - name: Release TextMe JS SDK
+      - name: Release to github
         run: |
           version=`git describe --tags --abbrev=0`
           echo ${{secrets.ICONICTO_GITHUB_BOT_TOKEN}} | gh auth login --with-token
-          if test -d samples
-          then
-            gh release create $version artifacts/*
-          else
-            gh release create $version
-          fi
+          gh release create $version
       - name: Publish TextMe JS SDK
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
@@ -85,3 +69,4 @@ jobs:
           cp README.md lib
           cd lib
           npm publish --access public
+          
