@@ -24,8 +24,7 @@ export class TextUtils {
     public static getAuthorizationHeaders(apiKey: string): HeadersInit {
         return {
             "Accept": "application/json",
-            "Authorization": `Bearer ${apiKey}`,
-            "Access-Control-Allow-Origin": "http://localhost:3000"
+            "Authorization": `Bearer ${apiKey}`
         }
     }
 

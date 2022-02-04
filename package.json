@@ -32,9 +32,9 @@
     "author": "Iconicto",
     "license": "Apache-2.0",
     "bugs": {
-        "url": "https://github.com/suvink/textme-node-sdk/issues"
+        "url": "https://github.com/Iconicto/textme-js-sdk/issues"
     },
-    "homepage": "https://github.com/suvink/textme-node-sdk#readme",
+    "homepage": "https://github.com/Iconicto/textme-js-sdk#readme",
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.9.0",
         "@typescript-eslint/parser": "^5.9.0",
