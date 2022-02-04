@@ -39,13 +39,29 @@ Create an account in [TextMe](http://portal.textme.lk/) if you don't already hav
 
 ## Install
 
+
 Install the library from the npm registry.
 
 ```
 npm install @iconicto/textme-js-sdk
 ```
 
-## Getting Started
+Or simply load the SDK by importing the script into the header of your HTML file.
+
+```javascript
+<script src="https://unpkg.com/@iconicto/textme-js-sdk@0.0.1/dist/textme.production.js"></script>
+
+<script>
+    const smsclient = new TextMeClient.TextMeClient({
+      apiKey: "4|rg6coE8RIS6lQeQf6IbvAna52f4gZqELZ3Bvl1Tp",
+      senderID: "<sender_id>"
+    });
+</script>
+```
+
+## Getting Started 
+
+### ExpressJS Example
 
 ```javascript
 // The SDK provides a client that can be used to carry out the functionalities.
@@ -76,6 +92,37 @@ app.post("/send", (req, res) => {
 });
 
 ```
+
+### ReactJS Example
+```javascript
+// The SDK provides a client that can be used to carry out the functionalities.
+import { TextMeClient } from "@iconicto/textme-js-sdk";
+
+// Create a config object containing the necessary configurations.
+const config = {
+    apiKey: "API Key" ,
+    senderID: "<sender_id>"
+};
+// Instantiate the TextMeClient and pass the config object as an argument into the constructor.
+const smsclient = new TextMeClient(config);
+
+//Send an SMS
+const sendSMS = () => {
+  smsclient
+    .sendSMS("94771655198", "Hello World")
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+
+sendSMS();
+
+```
+
+
 
 ## APIs
 

@@ -16,17 +16,17 @@
  * under the License.
  */
 
-export class TextUtils {
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
-    // eslint-disable-next-line @typescript-eslint/no-empty-function
-    private constructor() { }
+import fetch, { Headers, Request, Response } from "cross-fetch";
 
-    public static getAuthorizationHeaders(apiKey: string): HeadersInit {
-        return {
-            "Accept": "application/json",
-            "Authorization": `Bearer ${apiKey}`,
-            "Access-Control-Allow-Origin": "http://localhost:3000"
-        }
-    }
-
+if (!globalThis.fetch) {
+    globalThis.fetch = fetch;
+    globalThis.Headers = Headers;
+    globalThis.Request = Request;
+    globalThis.Response = Response;
 }
+
+// Export the public API.
+export * from "./public-api";

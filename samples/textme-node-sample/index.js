@@ -18,7 +18,7 @@
 
 const express = require("express");
 const cookieParser = require("cookie-parser");
-const { TextMeClient } = require("textme-sms-sdk");
+const { TextMeClient } = require("@iconicto/textme-js-sdk");
 const config = require("./config");
 
 //Constants

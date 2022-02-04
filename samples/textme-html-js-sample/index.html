@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>TextME Sample App</title>
+</head>
+
+<body>
+    <div class="App">
+        <header class="App-header">
+            <img src="https://portal.textme.lk/images/logo/ab25c4ade8c582f8896dad64c6ab258f.png" class="" alt="logo" />
+            <p>TextMe React JS Sample</p>
+
+            <div class="columns mt-4">
+                <div class="column is-4">
+                    <h1 class="title is-4 has-text-white">View Single SMS</h1>
+                    <h1 class="title is-6">Coming soon...</h1>
+                </div>
+                <div class="column is-4">
+                    <h1 class="title is-4 has-text-white">Send SMS</h1>
+                    <div>
+                        <div class="field has-text-left p-3">
+                            <label class="label has-text-white">Phone Number</label>
+                            <div class="control">
+                                <input class="input is-small" type="number" placeholder="Phone Number"
+                                    id="send-sms-number" />
+                            </div>
+                        </div>
+                        <div class="field has-text-left p-3">
+                            <label class="label has-text-white">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Message" id="send-sms-message"></textarea>
+                            </div>
+                        </div>
+                        <button class="button is-warning" onClick="sendsms();">
+                            Send Message
+                        </button>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <h1 class="title is-4 has-text-white">View All SMS</h1>
+                    <h1 class="title is-6">Coming soon...</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="./textme.production.js"></script>
+    <script>
+        const smsclient = new TextMeClient.TextMeClient({
+            apiKey: "4|rg6coE8RIS6lQeQf6IbvAna52f4gZqELZ3Bvl1Tp",
+            senderID: "Iconicto"
+        });
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

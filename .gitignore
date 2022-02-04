@@ -1,7 +1,10 @@
 # Dependency directories
 node_modules/
 lib/node_modules/
-sample/node_modules/
+samples/node_modules/
+samples/textme-node-sample/node_modules
+samples/textme-html-js-sample/node_modules
+samples/textme-react-sample/node_modules
 jspm_packages/
 
 # Distribution directories

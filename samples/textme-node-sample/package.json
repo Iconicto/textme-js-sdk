@@ -14,8 +14,8 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "@iconicto/textme-js-sdk": "file:../../lib",
     "cookie-parser": "^1.4.6",
-    "express": "^4.17.1",
-    "textme-sms-sdk": "../lib/"
+    "express": "^4.17.1"
   }
 }

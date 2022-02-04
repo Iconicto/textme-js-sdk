@@ -37,6 +37,7 @@ export class TextMeCore {
                 recipient: to,
                 sender_id: this._config.senderID
             }),
+            credentials: "include",
             headers: TextUtils.getAuthorizationHeaders(this._config.apiKey),
             method: "POST"
         });
