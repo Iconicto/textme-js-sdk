@@ -31,7 +31,7 @@
 
 ## Introduction
 
-Mauris iaculis pede, tellus commodo justo. Ligula in tortmris libero lectus libero aliquet, vestibulum aut nullloret ac sictus, id pede quis quisque lacinia consectetuer. uere eros velit eu nec arcu, repellat urna ad odio nunc. Doletiarcu eginrdum tiunt morbi, aenean dui amet at mapro Sed quis nunc est justo, in in, elit lorem vulputate, suspendisse pellentesque pede tpluptatem ut mattis, eros diam litora nullam. Ac cras, mollis quis maecenas urna ullamper eros.
+Text Me SMS API allows you to send and receive SMS messages to and from any country in the world through a REST API. Each message is identified by a unique random ID so that users can always check the status of a message using the given endpoint.
 
 ## Prerequisite
 
